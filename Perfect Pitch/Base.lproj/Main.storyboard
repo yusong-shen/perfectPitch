@@ -28,20 +28,32 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ4-YX-TV3">
                                 <rect key="frame" x="272" y="349" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UK5-Sj-b88">
+                                <rect key="frame" x="294" y="418" width="50" height="50"/>
+                                <state key="normal" image="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qzi-jn-89b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nJ4-YX-TV3" firstAttribute="top" secondItem="DE0-Mt-v11" secondAttribute="bottom" constant="39" id="3kt-mg-HNE"/>
                             <constraint firstAttribute="centerY" secondItem="DE0-Mt-v11" secondAttribute="centerY" constant="15" id="Cbf-AF-y4p"/>
                             <constraint firstAttribute="centerX" secondItem="DE0-Mt-v11" secondAttribute="centerX" constant="-19" id="Hwi-D0-Tr4"/>
+                            <constraint firstAttribute="centerX" secondItem="UK5-Sj-b88" secondAttribute="centerX" constant="-19" id="WDO-JW-5Hj"/>
                             <constraint firstAttribute="centerX" secondItem="nJ4-YX-TV3" secondAttribute="centerX" constant="-19.5" id="iH1-IJ-1tS"/>
+                            <constraint firstAttribute="centerY" secondItem="UK5-Sj-b88" secondAttribute="centerY" constant="-143" id="jYx-ux-qf9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="RecordingProcess" destination="nJ4-YX-TV3" id="LGC-3u-fwr"/>
+                        <outlet property="stopButton" destination="UK5-Sj-b88" id="4HH-su-jRa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -50,5 +62,6 @@
     </scenes>
     <resources>
         <image name="microphone" width="50" height="50"/>
+        <image name="stop" width="50" height="50"/>
     </resources>
 </document>

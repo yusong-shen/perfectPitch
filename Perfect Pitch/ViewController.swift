@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var RecordingProcess: UILabel!
     
+    @IBOutlet weak var stopButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,8 +26,13 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(sender: UIButton) {
         RecordingProcess.hidden = false
+        stopButton.hidden = false
         println("recording")
     }
 
+    @IBAction func stop(sender: UIButton) {
+        
+        RecordingProcess.hidden = true
+    }
 }
 

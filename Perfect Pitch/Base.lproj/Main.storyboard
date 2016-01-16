@@ -92,13 +92,13 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUD-ll-Aeb">
-                                <rect key="frame" x="56" y="430" width="100" height="100"/>
+                                <rect key="frame" x="56" y="314" width="100" height="100"/>
                                 <state key="normal" image="high">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFS-y8-b8K">
-                                <rect key="frame" x="444" y="430" width="100" height="100"/>
+                                <rect key="frame" x="444" y="314" width="100" height="100"/>
                                 <state key="normal" image="low">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,19 +106,31 @@
                                     <action selector="playLowPitch:" destination="aBf-zF-PPQ" eventType="touchUpInside" id="LqO-95-nM5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-Et-eu0">
+                                <rect key="frame" x="298" y="503" width="50" height="50"/>
+                                <state key="normal" image="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vfa-TV-utk"/>
+                                    <action selector="stopButton:" destination="aBf-zF-PPQ" eventType="touchUpInside" id="FSx-c9-rdP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PFS-y8-b8K" firstAttribute="top" secondItem="ZLg-Dd-GdS" secondAttribute="bottom" constant="80" id="FWM-Wr-UBW"/>
                             <constraint firstItem="PFS-y8-b8K" firstAttribute="leading" secondItem="nUD-ll-Aeb" secondAttribute="trailing" constant="192" id="Lja-Jl-LmQ"/>
-                            <constraint firstItem="NL0-3M-kdx" firstAttribute="top" secondItem="nUD-ll-Aeb" secondAttribute="bottom" constant="70" id="LoB-Ec-fUA"/>
-                            <constraint firstItem="NL0-3M-kdx" firstAttribute="top" secondItem="PFS-y8-b8K" secondAttribute="bottom" constant="70" id="NIe-ig-IX4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PFS-y8-b8K" secondAttribute="trailing" constant="40" id="OOf-BV-L5A"/>
                             <constraint firstItem="1Wh-DY-W5S" firstAttribute="leading" secondItem="kBe-rc-sAg" secondAttribute="leadingMargin" constant="40" id="Vsp-hN-2da"/>
+                            <constraint firstItem="nUD-ll-Aeb" firstAttribute="top" secondItem="1Wh-DY-W5S" secondAttribute="bottom" constant="80" id="bWI-7M-xFV"/>
                             <constraint firstItem="1Wh-DY-W5S" firstAttribute="top" secondItem="TBf-jY-8RR" secondAttribute="bottom" constant="70" id="egb-an-OWD"/>
                             <constraint firstItem="ZLg-Dd-GdS" firstAttribute="leading" secondItem="1Wh-DY-W5S" secondAttribute="trailing" constant="192" id="iCQ-Lo-mJe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZLg-Dd-GdS" secondAttribute="trailing" constant="40" id="kNc-qm-qM1"/>
                             <constraint firstItem="nUD-ll-Aeb" firstAttribute="leading" secondItem="kBe-rc-sAg" secondAttribute="leadingMargin" constant="40" id="mPP-Ab-bew"/>
+                            <constraint firstAttribute="centerX" secondItem="kmm-Et-eu0" secondAttribute="centerX" constant="-23" id="pzH-h5-wfC"/>
                             <constraint firstItem="ZLg-Dd-GdS" firstAttribute="top" secondItem="TBf-jY-8RR" secondAttribute="bottom" constant="70" id="qnx-Dv-FCv"/>
+                            <constraint firstAttribute="centerY" secondItem="kmm-Et-eu0" secondAttribute="centerY" constant="-228" id="wgs-5K-5jf"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

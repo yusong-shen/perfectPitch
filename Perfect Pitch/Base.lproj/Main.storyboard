@@ -53,6 +53,7 @@
                     </view>
                     <connections>
                         <outlet property="RecordingProcess" destination="nJ4-YX-TV3" id="LGC-3u-fwr"/>
+                        <outlet property="recordButton" destination="DE0-Mt-v11" id="XDc-j1-1J9"/>
                         <outlet property="stopButton" destination="UK5-Sj-b88" id="4HH-su-jRa"/>
                     </connections>
                 </viewController>

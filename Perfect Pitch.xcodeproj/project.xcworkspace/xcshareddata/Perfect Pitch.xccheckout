@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8ED348D2-68BB-47AE-A10A-4C996BCD4072</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Perfect Pitch</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DBBE4C30CD9991F117E13897FC24E7C5E8040716</key>
 		<string>https://github.com/yusong-shen/IOSAppDevelopment.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Perfect Pitch.xcodeproj</string>
+	<string>Perfect Pitch.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DBBE4C30CD9991F117E13897FC24E7C5E8040716</key>
